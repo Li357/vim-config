@@ -1,4 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
-let g:netrw_dirhist_2='/Users/andli/Desktop/forgerock-idm-config'
-let g:netrw_dirhist_1='/Users/andli'
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/Users/andli/Desktop/forgerock-am-config/dynamic/dev-poc/config/realms/root/OAuth2Clients'
+let g:netrw_dirhist_0='/Users/andli/Desktop/forgerock-deployer/overlays/dev-poc/kube'
+let g:netrw_dirhist_9='/Users/andli/Desktop/forgerock-deployer/overlays/dev-poc'
+let g:netrw_dirhist_8='/Users/andli/Desktop/forgerock-deployer/overlays/dev-poc/kube'
+let g:netrw_dirhist_7='/Users/andli/Desktop/forgerock-deployer/overlays/dev-poc'
+let g:netrw_dirhist_6='/Users/andli/Desktop/forgerock-deployer/overlays/dev-poc/kube'
+let g:netrw_dirhist_5='/Users/andli/Desktop/forgerock-deployer/overlays/dev-poc'
+let g:netrw_dirhist_4='/Users/andli/Desktop/forgerock-deployer/overlays/dev-poc/istio'
+let g:netrw_dirhist_3='/Users/andli/Desktop/forgerock-deployer/overlays/dev-poc'
+let g:netrw_dirhist_2='/Users/andli/Desktop/forgerock-deployer/overlays/dev-poc/forgeops'

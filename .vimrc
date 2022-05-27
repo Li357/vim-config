@@ -19,6 +19,8 @@ set shiftwidth=2
 set tabstop=2
 set expandtab
 
+set backspace=indent,eol,start
+
 set scrolloff=999
 set showcmd
 set showmode
@@ -43,4 +45,7 @@ endif
 set background=dark
 let g:everforest_background = 'hard'
 
+packadd! everforest
 colorscheme everforest
+
+packadd YouCompleteMe
