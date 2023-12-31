@@ -38,6 +38,8 @@ set foldlevelstart=99
 
 set omnifunc=syntaxcomplete#Complete
 
+autocmd FileType make set tabstop=2 shiftwidth=2 softtabstop=0 noexpandtab
+
 if has('termguicolors')
   set termguicolors
 endif
@@ -49,3 +51,16 @@ packadd! everforest
 colorscheme everforest
 
 packadd YouCompleteMe
+let g:ycm_semantic_triggers =  {
+  \   'c,cpp,objc': [ 're!\w{3}', '_' ],
+  \ }
+let g:ycm_add_preview_to_completeopt="popup"
+
+packadd vim-clang-format
+let g:c_syntax_for_h = 1
+let g:clang_format#detect_style_file = 1
+autocmd FileType c ClangFormatAutoEnable
+
+highlight RedundantSpaces ctermbg=red guibg=red
+match RedundantSpaces /\s\+$/
+

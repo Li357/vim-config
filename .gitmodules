@@ -4,3 +4,6 @@
 [submodule ".vim/pack/plugins/opt/YouCompleteMe"]
 	path = .vim/pack/plugins/opt/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe
+[submodule ".vim/pack/plugins/opt/vim-clang-format"]
+	path = .vim/pack/plugins/opt/vim-clang-format
+	url = https://github.com/rhysd/vim-clang-format
