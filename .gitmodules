@@ -7,3 +7,18 @@
 [submodule ".vim/pack/plugins/opt/vim-clang-format"]
 	path = .vim/pack/plugins/opt/vim-clang-format
 	url = https://github.com/rhysd/vim-clang-format
+[submodule ".vim/pack/plugins/opt/nerdtree"]
+	path = .vim/pack/plugins/opt/nerdtree
+	url = https://github.com/preservim/nerdtree
+[submodule ".vim/pack/plugins/opt/vim-devicons"]
+	path = .vim/pack/plugins/opt/vim-devicons
+	url = https://github.com/ryanoasis/vim-devicons
+[submodule ".vim/pack/plugins/opt/auto-pairs"]
+	path = .vim/pack/plugins/opt/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs
+[submodule ".vim/pack/plugins/opt/vim-airline"]
+	path = .vim/pack/plugins/opt/vim-airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule ".vim/pack/plugins/opt/fzf.vim"]
+	path = .vim/pack/plugins/opt/fzf.vim
+	url = https://github.com/junegunn/fzf.vim

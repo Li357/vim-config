@@ -1,3 +1,5 @@
+set encoding=UTF-8
+
 syntax on
 set hlsearch
 set ignorecase
@@ -30,6 +32,8 @@ set history=1000
 set wildmenu
 set wildmode=list:longest
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
+
+set rtp+=/opt/homebrew/opt/fzf
 
 set foldmethod=syntax
 set foldcolumn=1
@@ -64,3 +68,29 @@ autocmd FileType c ClangFormatAutoEnable
 highlight RedundantSpaces ctermbg=red guibg=red
 match RedundantSpaces /\s\+$/
 
+packadd vim-devicons
+
+packadd nerdtree
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * NERDTree | if argc() > 0 || exists("s:std_in") | wincmd p | endif
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+autocmd BufEnter * if winnr() == winnr('h') && bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
+    \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
+autocmd BufWinEnter * if &buftype != 'quickfix' && getcmdwintype() == '' | silent NERDTreeMirror | endif
+" Close the tab if NERDTree is the only window remaining in it.
+autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+let g:NERDTreeMinimalUI = 1
+
+set autowriteall
+
+packadd auto-pairs
+
+packadd vim-airline
+
+nnoremap th gT
+nnoremap tl gt
+
+packadd fzf.vim
+
+nnoremap <silent> <C-f> :Rg<CR>
+nnoremap <silent> <C-v> :Files<CR>
